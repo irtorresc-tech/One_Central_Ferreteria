@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Producto en oferta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 id="titulo">Producto</h1>
+  <a href="index.html" class="btn">Volver</a>
+</header>
+
+<section class="products">
+  <div class="card">
+    <img id="imagen" src="" alt="">
+    <h2 id="nombre"></h2>
+    <p id="descripcion"></p>
+
+    <p><strong id="precio"></strong></p>
+    <p><strong id="stock"></strong></p>
+
+    <label for="cantidad"><strong>Cantidad:</strong></label><br><br>
+    <input type="number" id="cantidad" min="1" value="1">
+
+    <br><br>
+    <button class="btn" onclick="comprar()">Comprar</button>
+  </div>
+</section>
+
+<script>
+  const productos = {
+    pistola: {
+      nombre: "Pistola de Pintar 450W",
+      descripcion: "450W (800ML) (TOTAL). Ahorra un 25%",
+      precio: "$137.625",
+      stock: 10,
+      imagen: "imagess/pistola de pintar 450w.avif"
+    },
+    pulidora: {
+      nombre: "Pulidora 900W",
+      descripcion: "900W (5\") INDUSTRIAL (TOTAL). Ahorra 25%",
+      precio: "$177.750",
+      stock: 8,
+      imagen: "imagess/pulidora.avif"
+    },
+    caja: {
+      nombre: "Caja de Herramienta 17\"",
+      descripcion: "Plástica con cierre metálico (TOTAL)",
+      precio: "$49.125",
+      stock: 15,
+      imagen: "imagess/cajas.avif"
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  if (productos[id]) {
+    const p = productos[id];
+    document.getElementById("titulo").innerText = p.nombre;
+    document.getElementById("imagen").src = p.imagen;
+    document.getElementById("imagen").alt = p.nombre;
+    document.getElementById("nombre").innerText = p.nombre;
+    document.getElementById("descripcion").innerText = p.descripcion;
+    document.getElementById("precio").innerText = "Precio: " + p.precio;
+    document.getElementById("stock").innerText = "Stock disponible: " + p.stock;
+    document.getElementById("cantidad").max = p.stock;
+  } else {
+    document.querySelector(".card").innerHTML = "<h2>Producto no encontrado</h2>";
+  }
+
+  function comprar() {
+    const cantidad = document.getElementById("cantidad").value;
+    alert("Compra simulada: " + cantidad + " unidades ✅");
+  }
+</script>
+
+</body>
+</html>

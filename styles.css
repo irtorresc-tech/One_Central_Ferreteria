@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+  background: #f1f5f9;
+}
+
+/* HEADER */
+.header {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.header .btn {
+  margin-top: 20px;
+  display: inline-block;
+  background: #f59e0b;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  background: #f59e0b;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  opacity: 0.85;
+}
+
+/* SECCIONES GENERALES */
+.about,
+.products,
+.contact,
+.about-split {
+  background: white;
+  border-radius: 16px;
+  margin: 30px auto;
+  max-width: 1100px;
+  padding: 60px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* SECCIÓN OFERTAS */
+#ofertas {
+  background: #1f2937;
+  color: white;
+  border-radius: 16px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* TÍTULOS */
+section h2 {
+  color: #1f2937;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#ofertas h2 {
+  color: #f59e0b;
+}
+
+/* PRODUCTOS */
+.products .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* ABOUT SPLIT */
+.about-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+}
+
+.about-img {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ANIMACIONES */
+section {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f2937;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-split {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* OFERTAS */
+.ofertas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.oferta-card {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 14px;
+  color: #1f2937;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.oferta-card h3 {
+  margin-bottom: 10px;
+}
+
+.precio {
+  display: block;
+  text-decoration: line-through;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+.descuento {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #16a34a;
+}
+
+.oferta-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.oferta-card:hover {
+  transform: scale(1.03);
+}
+/* MEJORAS GENERALES */
+img {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover,
+.menu a:hover {
+  transform: scale(1.05);
+}
+
+/* OFERTAS MEJORADAS */
+.oferta-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.oferta-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* IMAGENES OFERTAS */
+.oferta-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* NAVBAR MAS LIMPIO */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* TITULOS MAS BONITOS */
+section h2, 
+.header h1 {
+  letter-spacing: 1px;
+}
+
+/* BOTON */
+.btn {
+  transition: all 0.3s ease;
+}
+
+#ofertas .oferta-card h3,
+#ofertas .oferta-card p {
+  color: #1f2937;
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.contacto-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.contacto-form h2 {
+  margin-bottom: 25px;
+}
+
+.contacto-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.contacto-form button {
+  background: #f59e0b;
+  color: black;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contacto-form button:hover {
+  opacity: 0.9;
+}
