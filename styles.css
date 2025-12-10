@@ -5,12 +5,12 @@
   font-family: Arial, sans-serif;
 }
 
-/* FONDO GENERAL */
+/* fondo bodyu */
 body {
   background: #f1f5f9;
 }
 
-/* HEADER */
+/* header */
 .header {
   background: #1f2937;
   color: white;
@@ -29,7 +29,7 @@ body {
   border-radius: 6px;
 }
 
-/* NAVBAR */
+/* navbar */
 .navbar {
   background: #0f172a;
   color: white;
@@ -63,11 +63,11 @@ body {
   opacity: 0.85;
 }
 
-/* SECCIONES GENERALES */
+/* secciones */
 .about,
 .products,
 .contact,
-.about-split {
+.sobrenosotros {
   background: white;
   border-radius: 16px;
   margin: 30px auto;
@@ -77,7 +77,7 @@ body {
   text-align: center;
 }
 
-/* SECCIÓN OFERTAS */
+/* ofertas */
 #ofertas {
   background: #1f2937;
   color: white;
@@ -88,7 +88,7 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* TÍTULOS */
+/* titulos */
 section h2 {
   color: #1f2937;
   font-size: 28px;
@@ -99,7 +99,7 @@ section h2 {
   color: #f59e0b;
 }
 
-/* PRODUCTOS */
+/* productos mis */
 .products .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -127,8 +127,8 @@ section h2 {
   object-fit: contain;
 }
 
-/* ABOUT SPLIT */
-.about-split {
+/* sobre nostrosT */
+.sobrenosotros {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -136,27 +136,27 @@ section h2 {
   text-align: left;
 }
 
-.about-text {
+.nosotrostexto {
   flex: 1;
 }
 
-.about-text h2 {
+.nosotrostexto h2 {
   margin-bottom: 15px;
 }
 
-.about-img {
+.sobrenosotrosimg {
   flex: 1;
   text-align: center;
 }
 
-.about-img img {
+.sobrenosotrosimg img {
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* ANIMACIONES */
+/* animacion */
 section {
   animation: fadeIn 0.6s ease-in;
 }
@@ -172,7 +172,7 @@ section {
   }
 }
 
-/* WHATSAPP */
+/* wasa */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -191,7 +191,7 @@ section {
   z-index: 1000;
 }
 
-/* FOOTER */
+/* footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -199,15 +199,15 @@ footer {
   color: white;
 }
 
-/* RESPONSIVE */
+/* responsive */
 @media (max-width: 768px) {
-  .about-split {
+  .sobrenosotros {
     flex-direction: column;
     text-align: center;
   }
 }
 
-/* OFERTAS */
+/* ofertas */
 .ofertas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -251,7 +251,7 @@ footer {
 .oferta-card:hover {
   transform: scale(1.03);
 }
-/* MEJORAS GENERALES */
+
 img {
   transition: transform 0.3s ease;
 }
@@ -261,7 +261,7 @@ img {
   transform: scale(1.05);
 }
 
-/* OFERTAS MEJORADAS */
+
 .oferta-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -271,25 +271,25 @@ img {
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* IMAGENES OFERTAS */
+/* img ofertas */
 .oferta-card img {
   width: 100%;
   height: 180px;
   object-fit: contain;
 }
 
-/* NAVBAR MAS LIMPIO */
+
 .navbar {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* TITULOS MAS BONITOS */
+
 section h2, 
 .header h1 {
   letter-spacing: 1px;
 }
 
-/* BOTON */
+
 .btn {
   transition: all 0.3s ease;
 }
@@ -308,7 +308,6 @@ section h2,
 .card img {
   border-radius: 10px;
 }
-
 .contacto-form {
   max-width: 600px;
   margin: 40px auto;
@@ -351,3 +350,4 @@ section h2,
 .contacto-form button:hover {
   opacity: 0.9;
 }
+
