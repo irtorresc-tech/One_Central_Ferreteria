@@ -1,17 +1,17 @@
 # One_Central_Ferreteria
-Introducción 
+# Introducción 
 Recientemente, la exposición digital ha impulsado el comercio. Locales como las 
 ferreterías que están enfocados principalmente en la venta presencial, han comenzado a 
 adoptar herramientas que les permiten expandir sus ventas, como lo son las ventas online y 
 así poder mejorar la calidad de sus servicios, visibilizar sus productos, impulsar sus ventas 
 e informar a través del internet. 
-Objetivo
+# Objetivo
 El objetivo principal de este proyecto es exponer los productos de forma clara y organizada 
 con el fin de facilitar el proceso de compra y aumentar el alcance digital del negocio. 
 Además, busca generar más oportunidades de venta y mejorar la interacción entre los 
 servicios que ofrecen y sus clientes.
-Desarrollo
-Para la construcción de la página nos centramos principalmente en la claridad, la 
+# Desarrollo
+# Para la construcción de la página nos centramos principalmente en la claridad, la 
 accesibilidad y la experiencia del usuario. La página comienza con un encabezado que 
 presenta el nombre del negocio y un menú de navegación simple compuesto por secciones
 de acceso rápido hacia diferentes campos. Esta estructura facilita que el usuario comprenda 
@@ -27,7 +27,7 @@ es fundamental para cerrar ventas o resolver dudas.
 Todas estas partes e interacciones fueron diseñadas para cumplir un propósito principal: 
 impulsar las ventas mediante la página clara y visualmente atractiva que guía al usuario 
 desde la comodidad y la confianza.
-Conclusiones
+# Conclusiones
 La creación de esta página fue un paso importante hacia su crecimiento en las ventas 
 Online. Al estar enfocada en incrementar sus ventas en internet, la página promociona y 
 ofrece comunicación directa con los clientes. Una estructura clara, acompañada de 
