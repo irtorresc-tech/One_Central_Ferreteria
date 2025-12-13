@@ -11,7 +11,7 @@ con el fin de facilitar el proceso de compra y aumentar el alcance digital del n
 Además, busca generar más oportunidades de venta y mejorar la interacción entre los 
 servicios que ofrecen y sus clientes.
 # Desarrollo
-# Para la construcción de la página nos centramos principalmente en la claridad, la 
+Para la construcción de la página nos centramos principalmente en la claridad, la 
 accesibilidad y la experiencia del usuario. La página comienza con un encabezado que 
 presenta el nombre del negocio y un menú de navegación simple compuesto por secciones
 de acceso rápido hacia diferentes campos. Esta estructura facilita que el usuario comprenda 
